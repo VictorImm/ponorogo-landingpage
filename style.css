@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Regular.woff2') format('woff2'),
+    url('SegoeUI-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('Assets/font/FjallaOne-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background-color: #020122;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+.header-scrolled {
+    background-color: #fa9f42;
+    box-shadow: 0, 3px, 10px rgba(0, 0, 0, 0.15);
+}
+.header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 45px;
+}
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 45px;
+}
+.header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+.header ul li a {
+    text-decoration: none;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.header ul li a:hover,
+.header ul li a.active {
+    background: #fff;
+    color: #020122
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.landing::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#020122,transparent);
+    z-index: 1000;
+}
+.landing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.landing img#ponorogo_front {
+    z-index: 10;
+}
+.landing h2#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 15vw;
+    z-index: 9;
+    font-family: 'FjallaOne';
+    letter-spacing: 50px;
+    text-shadow: 2px 2px 8px #020122;
+}
+
+.lorem {
+    position: realtive;
+    padding: 100px;
+    background-color: #020122;
+}
+.lorem p {
+    font-size: 1em;
+    color: #fff;
+}
