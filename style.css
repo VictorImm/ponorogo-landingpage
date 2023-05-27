@@ -99,6 +99,10 @@ body {
 }
 .landing img#ponorogo_front {
     z-index: 10;
+    opacity: 1;
+}
+.landing img#ponorogo_back {
+    opacity: 0.5;
 }
 .landing h2#text {
     position: absolute;
@@ -109,14 +113,4 @@ body {
     font-family: 'FjallaOne';
     letter-spacing: 50px;
     text-shadow: 2px 2px 8px #020122;
-}
-
-.lorem {
-    position: realtive;
-    padding: 100px;
-    background-color: #020122;
-}
-.lorem p {
-    font-size: 1em;
-    color: #fff;
 }
