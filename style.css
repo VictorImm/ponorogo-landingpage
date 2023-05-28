@@ -70,6 +70,16 @@ body {
     background: #fff;
     color: #020122
 }
+.header ul li .btn-login {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+}
 
 .landing {
     position: relative;
