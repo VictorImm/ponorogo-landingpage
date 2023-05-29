@@ -16,10 +16,14 @@
     font-family: 'Segoe UI';
     scroll-behavior: smooth;
 }
+
+/* body style */
 body {
     min-height: 100vh;
-    background-color: #020122;
+    background-color: #313638;
 }
+
+/* header style */
 .header {
     position: fixed;
     top: 0;
@@ -34,9 +38,11 @@ body {
     z-index: 9999;
 }
 .header-scrolled {
-    background-color: #fa9f42;
+    background-color: #E4B363;
     box-shadow: 0, 3px, 10px rgba(0, 0, 0, 0.15);
 }
+
+/* logo style */
 .header .logo {
     color: #fff;
     font-weight: 700;
@@ -46,6 +52,11 @@ body {
     letter-spacing: 2px;
     padding-left: 45px;
 }
+.header .logo.logo-scrolled {
+    color: #313638;
+}
+
+/* other navbar items style */
 .header ul {
     display: flex;
     justify-content: center;
@@ -67,9 +78,10 @@ body {
 }
 .header ul li a:hover,
 .header ul li a.active {
-    background: #fff;
-    color: #020122
+    text-decoration: underline;
 }
+
+/* button login style */
 .header ul li .btn-login {
     background: transparent;
     border: 2px solid #fff;
@@ -80,7 +92,20 @@ body {
     font-weight: 500;
     transition: 0.5s;
 }
+.header ul li .btn-login:hover {
+    background: #fff;
+    color: #313638;
+}
+.header ul li .btn-login.btn-scrolled {
+    border: 2px solid #313638;
+    color: #313638;
+}
+.header ul li .btn-login.btn-scrolled:hover {
+    background: #313638;
+    color: #fff;
+}
 
+/* paralax landing page style */
 .landing {
     position: relative;
     width: 100%;
@@ -96,7 +121,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#020122,transparent);
+    background: linear-gradient(to top,#313638,transparent);
     z-index: 1000;
 }
 .landing img {
@@ -122,5 +147,5 @@ body {
     z-index: 9;
     font-family: 'FjallaOne';
     letter-spacing: 50px;
-    text-shadow: 2px 2px 8px #020122;
+    text-shadow: 2px 2px 8px #313638;
 }
