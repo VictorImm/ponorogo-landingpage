@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    
+} */
+
+.table {
+    width: 100%;
+}
+.table .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240,240,240);
+}
+.table .table-header p {
+    color: #000000;
+}
+
+.table .table-section {
+    height: 650px;
+    overflow: auto;
+}
+.table .table-section table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px
+}
+.table .table-section thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+.table .table-section th, td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.table .table-section tr:hover td{
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+.table td button.btn-edit {
+    color: #fff;
+    background-color: #0298cf;
+}
+.table td button.btn-trash {
+    color: #fff;
+    background-color: #f80000;
+}
+
+.form-section {
+    padding: 25px 30px;
+    max-width: 1000px;
+    width: 100%;
+}
+.form-section .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+.form-section form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.form-section form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.form-section form .user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-section form .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.form-section form .user-details .input-box input:focus,
+.form-section form .user-details .input-box input:valid {
+    border-color: #0298cf;
+}
+.form-section form button {
+    color: #fff;
+    background-color: #0298cf;
+    padding-left: 50px;
+    padding-right: 50px;
+}
