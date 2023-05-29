@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 2px solid black;
+    border-radius: 6px;
+    transition: .5s;
+}
+a:hover {
+    color: #fff;
+    background: black;
+}
