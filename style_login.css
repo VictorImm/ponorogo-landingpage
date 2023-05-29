@@ -25,6 +25,27 @@ body {
     background-color: #fff;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+.header .logo {
+    color: #313638;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 45px;
+}
+
 .wrapper {
     position: relative;
     width: 400px;
@@ -67,7 +88,7 @@ body {
 
 .wrapper .form-box h2 {
     font-size: 2em;
-    color: #020122;
+    color: #313638;
     text-align: center;
 }
 .wrapper .input-box {
@@ -83,7 +104,7 @@ body {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #020122;
+    color: #313638;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -107,14 +128,14 @@ body {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #020122;
+    color: #313638;
     line-height: 57px;
 }
 
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background: #020122;
+    background: #313638;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -126,15 +147,15 @@ body {
 
 .wrapper .login-register {
     font-size: .9em;
-    color: #020122;
+    color: #313638;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 .wrapper .login-register p a {
-    color: #020122;
+    color: #313638;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 800;
 }
 .wrapper .login-register p a:hover {
     text-decoration: underline;
