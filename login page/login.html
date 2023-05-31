@@ -17,15 +17,15 @@
             <!-- Login -->
             <div class="form-box login">
                 <h2>Login</h2>
-                <form action="../temp.html">
+                <form method="post" name="login" action="login.php">
                     <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required>
-                        <label>Email</label>
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input name="uname" type="text" required>
+                        <label>Username</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required>
+                        <input name="pw" type="password" required>
                         <label>Password</label>
                     </div>
                     <button type="submit" class="btn">Login</button>
@@ -38,20 +38,20 @@
             <!-- Register -->
             <div class="form-box register">
                 <h2>Register</h2>
-                <form action="../temp.html">
+                <form method="post" name="register" action="register.php">
                     <div class="input-box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="text" required>
+                        <input name="uname" type="text" required>
                         <label>Username</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required>
+                        <input name="email" type="email" required>
                         <label>Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required>
+                        <input name="pass" type="password" required>
                         <label>Password</label>
                     </div>
                     <button type="submit" class="btn">Register</button>
