@@ -33,6 +33,7 @@
                         <div class="input-box">
                             <span class="details">Produk UMKM</span>
                             <select name="produk" required>
+                                <!-- to add more -->
                                 <option value="" disabled selected>Masukkan jenis produk</option>
                                 <option value="Makanan">Makanan</option>
                             </select>

@@ -15,8 +15,6 @@
     $img = $_POST["foto"];
     $stat = 0;
 
-    var_dump($_POST);
-
     $query = mysqli_query($status,
 	"
 	INSERT INTO umkm_db(
