@@ -66,25 +66,34 @@ button {
     background-color: #f80000;
 }
 
+/* form general styling */
 .form-section {
     padding: 25px 30px;
     max-width: 1000px;
     width: 100%;
 }
+
+/* title styling */
 .form-section .title {
     font-size: 25px;
     font-weight: 500;
 }
+
+/* input general styling */
 .form-section form .user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 12px 0;
 }
+
+/* input box styling */
 .form-section form .user-details .input-box {
     margin-bottom: 15px;
     width: calc(100% / 2 - 20px);
 }
+
+/* text input styling */
 .form-section form .user-details .input-box .details {
     display: block;
     font-weight: 500;
@@ -110,4 +119,69 @@ button {
     background-color: #0298cf;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+/* dropdown input styling */
+.form-section form .user-details .input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.form-section form .user-details .input-box select:focus,
+.form-section form .user-details .input-box select:valid {
+    border-color: #0298cf;
+}
+
+.form-section form .user-details .input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.form-section form .user-details .input-box select:focus,
+.form-section form .user-details .input-box select:valid {
+    border-color: #0298cf;
+}
+
+/* text area styling */
+.form-section form .user-details-long {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.form-section form .user-details-long .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-section form .user-details-long .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-section form .user-details-long .input-box textarea {
+    height: 90px;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.form-section form .user-details-long .input-box textarea:focus,
+.form-section form .user-details-long .input-box textarea:valid {
+    border-color: #0298cf;
 }
