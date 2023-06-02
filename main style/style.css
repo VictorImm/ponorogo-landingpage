@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'FjallaOne';
-    src: url('Assets/font/FjallaOne-Regular.ttf');
+    src: url('../Assets/font/FjallaOne-Regular.ttf');
 }
 * {
     margin: 0;
@@ -21,6 +21,10 @@
 body {
     min-height: 100vh;
     background-color: #313638;
+}
+body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
 }
 
 /* header style */
@@ -44,16 +48,14 @@ body {
 
 /* logo style */
 .header .logo {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-left: 45px;
-}
-.header .logo.logo-scrolled {
-    color: #313638;
+    width: 60px;
+    height: auto;
+    margin-left: 45px;
+    padding: 6px;
+
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: visible;
 }
 
 /* other navbar items style */
@@ -79,6 +81,12 @@ body {
 .header ul li a:hover,
 .header ul li a.active {
     text-decoration: underline;
+}
+.header ul li .item1.scrolled,
+.header ul li .item2.scrolled,
+.header ul li .item3.scrolled,
+.header ul li .item4.scrolled {
+    color: #313638;
 }
 
 /* button login style */
