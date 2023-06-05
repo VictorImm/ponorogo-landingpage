@@ -52,10 +52,6 @@ body::-webkit-scrollbar {
     height: auto;
     margin-left: 45px;
     padding: 6px;
-
-    background-color: #fff;
-    border-radius: 50%;
-    overflow: visible;
 }
 
 /* other navbar items style */
